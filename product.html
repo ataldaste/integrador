@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <!-- Metadados para a página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Conexões para fontes externas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Estilos de ícones e fontes -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- Script para o comportamento do produto -->
+    <script type="module" src="scripts/product.js" defer></script>
+
+    <title>Produto</title>
+  </head>
+
+  <body>
+
+    <!-- Cabeçalho da página -->
+    <header id="header">
+      <div class="info_bar">
+        <!-- Logo do site -->
+        <div class="header_logo_container">
+          <img src="images/logo.png" alt="logo do site" style="width: 150px; height: auto;">
+        </div>
+
+        <!-- Menu de navegação -->
+        <nav class="container">
+          <ul class="menu">
+            <a id="url" href="index.html">Home</a>
+            <a id="url" href="#best_sellers">Mais vendidos</a>
+            <a id="url" href="about_us.html">Sobre nós</a>
+            <a id="url" href="products.html">Catálogo</a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Corpo principal da página de produto -->
+    <main class="product main-content container">
+      <h2 class="product text-container page-title-small" id="product-category"></h2>
+
+      <!-- Detalhes do produto -->
+      <div class="product text-container" id="product-title">
+        <h4>COD: 1</h4>
+        <h3 class="product main-text">Cactus</h3>
+      </div>
+
+      <!-- Seção com preços, quantidade e frete -->
+      <section class="product text-container">
+        <div id="product_page">
+          <div class="grid_col_1">
+            <!-- Espaço para imagem ou detalhes adicionais do produto -->
+          </div>
+
+          <div class="grid_col_2">
+            <!-- Preço e condições de pagamento -->
+            <div class="product_price_container">
+              <h2>R$ 999,00</h2>
+              <h5>Ou em até 10x sem juros de R$ 99,90 no cartão de crédito</h5>
+              <div class="quantity">
+                <input type="number" name="quantity" id="quantity" value="1">
+                <button class="shop_btn">Comprar</button>
+              </div>
+            </div>
+
+            <!-- Cálculo de frete -->
+            <div class="freight_container">
+              <form action="">
+                <label for="">Calcule seu frete</label>
+                <div class="container-flex">
+                  <input type="text" name="" id="" placeholder="Digite o cep da entrega">
+                  <button class="freight_ok">OK</button>
+                </div>
+                <p><a href="https://buscacepinter.correios.com.br/app/endereco/index.php">Não sei meu cep</a></p>
+              </form>
+            </div>
+
+            <!-- Opções de frete -->
+            <div class="freight_pricing container-flex">
+              <div class="radio">
+                <input type="radio" name="" id="">
+              </div>
+              <div class="pricing">
+                <h3>12x de R$ 83,25</h3>
+                <p>Entrega em até 45 dias úteis</p>
+              </div>
+            </div>
+
+            <div class="freight_pricing container-flex">
+              <div class="radio">
+                <input type="radio" name="" id="">
+              </div>
+              <div class="pricing">
+                <h3>À vista R$ 999,99</h3>
+                <p>Entrega em até 20 dias úteis</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Seção de informações adicionais -->
+    <div class="infos">
+      <div class="infoBox">
+        <h2>Payment Methods</h2>
+        <p>We pay for your purchase in up to 48 interest-free installments on all credit cards or with up to a 5% cash discount.</p>
+      </div>
+      <div class="infoBox">
+        <h2>Our Contacts</h2>
+        <p>Coverage throughout the entire country! No matter where you are.</p>
+        <p>(19)99999-9999</p>
+      </div>
+      <div class="infoBox">
+        <h2>Service</h2>
+        <p>Physical store Open from 08:00 to 20:00 Monday to Friday</p>
+        <p>(19)99999-9999</p>
+      </div>
+    </div>
+
+    <!-- Rodapé da página -->
+    <footer class="footer">
+      <div class="about_section">
+        <h3>Sobre a PlantaVerde</h3>
+        <p>Especialistas em plantas verdes para sua casa.</p>
+      </div>
+      <div class="contact_section">
+        <h3>Fale Conosco</h3>
+        <p>Email: <a href="mailto:contato@plantaverde.com">contato@plantaverde.com</a></p>
+        <p>Telefone: <a href="tel:+5511987654321">+55 11 98765-4321</a></p>
+      </div>
+      <div class="copyright_section">
+        <p>&copy; 2024 PlantaVerde. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+
+</html>
